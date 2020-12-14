@@ -14,10 +14,9 @@ else {
 
 // exo 2
 let parIsNan = document.getElementById("is-nan");
-let ref = parseInt(parIsNan.innerHTML);
-console.log(ref);
+let isNan = parseInt(parIsNan.innerHTML);
 
-if (isNaN(ref)) {
+if (isNaN(isNan)) {
     parIsNan.innerHTML = parIsNan.innerHTML + " est NaN";
 }
 else {
@@ -25,3 +24,26 @@ else {
 }
 
 // exo 3
+let parParFloat = document.getElementById("parse-float");
+
+let paFloat = Number.parseFloat(parParFloat.innerHTML);
+
+paFloat = paFloat * 45;
+
+parParFloat.innerHTML = paFloat + " % de la population blablabla";
+
+// exo 4
+let parInt = document.getElementById("parse-int");
+
+let paInt = parseFloat(parInt.innerHTML);
+let newVal = parseInt(paInt / 45);
+parInt.innerHTML = newVal + "px";
+
+// exo 5
+let toFix = document.getElementById("to-fixed");
+
+let value = parseFloat(toFix.innerHTML);
+
+value = value.toFixed(2);
+
+toFix.innerHTML = value;
