@@ -1,4 +1,4 @@
-// exo 1
+// // exo 1
 let parIsInt = document.getElementById("is-integer");
 
 let valeur = parseFloat(parIsInt.innerHTML);
@@ -13,4 +13,15 @@ else {
 }
 
 // exo 2
+let parIsNan = document.getElementById("is-nan");
+let ref = parseInt(parIsNan.innerHTML);
+console.log(ref);
 
+if (isNaN(ref)) {
+    parIsNan.innerHTML = parIsNan.innerHTML + " est NaN";
+}
+else {
+    parIsNan.innerHTML = parIsNan.innerHTML + " est un nombre";
+}
+
+// exo 3
